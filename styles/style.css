@@ -1,156 +1,447 @@
-/* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-/* common styles */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #E5E5E5;
+/*---------------------------
+    common style 
+----------------------------*/
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
 }
 
-main {
+/*-------------------- 
+    navigation bar 
+-------------------*/
+.nav-items{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+    padding: 20px 0;
     align-items: center;
 }
-
-.container {
-    width: 870px;
-    background-color: #FFFFFF;
-    padding: 30px;
-    margin-top: 21px;
-    border-radius: 5px;
+.nav-title h2{
+    font-weight: 700;
+    font-size: 45px;
 }
-
-/* -----------------
-top player 
-------------------*/
-.top-players {
-    margin-bottom: 21px;
+.nav-item ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px 15px;
 }
-
-.section-title {
-    font-weight: 500;
-    font-size: 24px;
-    color: #562EFF;
-    margin-top: 3px;
-}
-
-.players {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 30px;
-}
-
-.player {
-    display: flex;
-    align-items: center;
-}
-
-.player img {
-    width: 56px;
-    height: 56px;
-}
-
-.player-name {
-    margin-left: 16px;
+.nav-item ul li a{
+    text-decoration: none;
+    color:  #424242;
     font-size: 18px;
 }
-
-hr {
-    border: 1px solid #D1D1D1;
-    margin-bottom: 27px;
+/*------------------------
+    banner section css 
+--------------------------*/
+header{
+    background: rgba(255, 144, 14, 0.1);
 }
 
-/* ----------------
-     blogs css 
-------------------*/
-.blogs {
+.title-container{
+    width: 862px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 100px;
+}
+.title-container h2{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313;
+    margin-bottom: 40px;
+}
+.title-container p{
+    margin-top: -30px;
+    color: #727272;
+}
+.banner-button{
+    width: 180px;
+    margin: auto;
+}
+.button{
+    padding: 21px 24px;
+    background-color: #FF900E;
+    border-radius: 5px;
+    border: 0;
+    color: #FFFFFF;
+}
+.button:hover{
+    background-color:#b7ff0e ;
+    color: #FF900E;
+}
+/*-----------------------------
+    banner img part css 
+-------------------------------*/
+.banner{
+    padding: 45px 0;
+}
+.banner img{
+    width: 1040px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*------------------------
+    main section css 
+--------------------------*/
+
+.features{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.team img{
+    width: 200px;
+    float: left;
+    margin:10px;
+}
+.team, .feature{
+    width: 50%;
+}
+.feature{
+    margin-top: 70px;
+}
+.feature h2{
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+    text-align: left;
+}
+.feature p{
+    font-size: 16px;
+    color: #727272;
+    margin: 12px 0;
+    text-align: left;
+}
+/* <!-----------------------
+    main section css
+--------------------------------> */
+
+.container{
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+.arcitact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 26px;
 }
-
-.blog {
+.content-img img{
+    width: 458px;
+    margin-left: 20px;
+}
+.content-header{
+    margin-bottom: 10px;
+}
+.content-header h3{
+    font-weight: 700;
+    font-size: 35px;
+}
+.content-section h4{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+}
+.content-section p{
+    font-size: 16px;
+    color: #727272;
+    margin-top: 5px;
+    text-align: left;
+}
+.content{
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 15px;
+}
+/*--------------------------
+     experience section 
+----------------------------*/
+.experience{
+    width: 210px;
+    margin: auto;
+    background-color: #FF900E;
+    padding: 20px 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 660px;
+}
+.experience:hover{
+    background-color: #b7ff0e;
+    color: #FF900E;
+}
+.experience h2{
+    font-weight: 700;
+    font-size: 50px;
+}
+.experience p{
+    font-weight: 500;
+    font-size: 25px;
+}
+/*------------------------------
+    Some Facts 
+------------------------------*/
+.facts{
+    width: 50%;
+    margin-left: -490px;
+}
+.facts h2{
+    text-align: left;
+}
+.facts p{
+    font-size: 16px;
+    color: #727272;
+    margin: 15px 0;
+    text-align: left;
+}
+/*-------------------------
+    count section 
+------------------------*/
+.counting{
     display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
 }
-
-.blog .thumbnail img {
-    width: 177px;
-    height: 117;
+.count{
+    width: 200px;
+    height: 200px;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
 }
-
-.blog-info {
-    margin-left: 16px;
+.count img{
+    display: flex;
+    padding-top: 40px;
 }
-
-.blog-title {
+.count img, h2, p{
+    margin: auto;
+    text-align: center;
+}
+.count h2{
+    color: #424242;
+    font-size: 45px;
+    font-weight: 600;
+}
+.count p{
+    color: #727272;
     font-size: 20px;
 }
-
-.blog-author {
-    color: #9F9F9F;
+/*------------------------------
+     Our Sponspors 
+-------------------------------*/
+.sponspors{
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+.sponspors h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+.sponspors p{
     font-size: 16px;
+    color: #727272;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
-
-.blog-author a {
-    color: #562EFF;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-/* ----------------------------
-        latest courses 
-------------------------------*/
-.courses{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 24px;
-}
-.course .course-banner img {
-    width: 224px;
-    height: 104px;
-}
-.course-info{
+/*---------------------
+     sponsor 
+-----------------------*/
+.sponspor-logo{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    width: 1150px;
+    margin: auto;
 }
-.fa-star{
-    font-size: 12px;
+.sponspor-logo img{
+    width: 100px;
 }
-.fa-star.filled{
-    color:#FFC014;
+/*----------------------
+    footer 
+----------------------*/
+.footer{
+    width: 1000px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #FFF4E7;
+    padding: 5px;
+    margin-top: 90px;
 }
-.fa-star.empty{
-    color: #AEAEAE;
+.footer p{
+    color:  #424242;
+    font-size: 16px;
 }
 
+/* ----------------- 
+    media quarys 
+--------------------*/
+@media only screen and (max-width:688px){
+    /*-----------------------
+        navigation bar 
+     ------------------------*/
+    .nav-title, .nav-item{
+        margin-top: 25px;
+    }
+    .nav-items{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .nav-item{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+        }
+    .nav-item ul li{
+        float: none;
+        text-align: center;
+    }
+    header{
+        background: #FFFFFF;
+    }
+     /* --------------------
+        title-container 
+    -------------------*/
+     .title-container{
+        width: 100%;
+     }
+     .title-container h2{
+        font-size: 40px;
+     }
+     /* banner images */
+     .banner img{
+        width: 100%;
+     }
+     /* features */
+     .features{
+        width: 100%;
+     }
+     .features{
+        display: grid;
+        justify-items: center;
+     }
+     .team{
+        width: 100%;
+     }
+     .team img{
+        width: 100%;
+        margin-top: 10px;
+     }
+     /* -----------------------
+            feature 
+        -----------------------*/
+     .feature{
+        width: 100%;
+     }
+     .feature{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+     }
+     .feature h2, p, button{
+        text-align: center;
+     }
+     .feature p{
+        margin-left: 22px;;
+     }
+     .button{
+        margin-left: 25px;
+     }
+     /*----------------------
+        container 
+    -------------------------*/
 
-/* media quary mobile device */
-
-@media only screen and (max-width: 688px) {
-    .container{
+     .container{
+        display: grid;
+        width: auto;
+     }
+     .arcitact{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         width: 100%;
     }
-    .players, .blogs, .courses{
+     .content-header{
+        width: 100%;
+        margin: 0;
+     }
+     .content-header, .content{
+        margin: 15px 0px;
+     }
+     .content-section{
+        width: 100%;
+        text-align: center;
+     }
+     .content-section{
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }    
-    .player, .blog{
-        flex-direction: column;
+     }
+     .content h3, p{
+        text-align: center;
+     }
+     .content img{
+        width: 100%;
+     }
+     .content-img-section{
+        width: 100%;
+     }
+     .content-img img {
+        margin: 15px 0;
+     }
+     /*---------------------------
+        experience 
+    ----------------------------*/
+     .experience{
+        width: 100%;
+        margin: 0;
+     }
+     .facts{
+        width: 100%;
+        margin: 0;
+        margin-top: 90px;
     }
-  
-}
-/* tablate devices */
-
-@media only screen and (min-width: 688px) and (max-width: 992px){
-    .container{
+    .facts h2, p{
+        text-align: center;
+    }
+    /*-----------------------
+         counting 
+    ------------------------*/
+    .counting{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .counting{
         width: 100%;
     }
-    .players, .courses{
-        grid-template-columns: repeat(2, 1fr);
-    }    
-    .blogs{
+    .count {
+        margin-top: 15px;
+    }
+    /*------------------------
+        sponspor-logo 
+    --------------------------*/
+    .sponspor-logo{
+        width: 100%;
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
-    }    
+        margin-top: 50px;
+    }
+    .sponspor-logo img{
+        width: 50%;
+       display: flex;
+        margin: auto;
+        padding: 20px 0;
+    }
+     /* footer */
+     .footer{
+        width: 100%;
+        margin: auto;
+     }
 }
